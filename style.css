@@ -1,0 +1,405 @@
+* {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main {
+    border-radius: 5px;
+    max-width: 82%;
+    margin: auto auto auto 275px;
+    padding: 25px;
+}
+main section {
+    margin-bottom: 15px;
+}
+p, a, li {
+    font-family: Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+.aboutme {
+    position: fixed;
+    left: 20px;
+    width: 200px;
+    background: linear-gradient(145deg, #1e1e1e, #3d3d3d);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    z-index: 1000;
+    border: groove 5px #0094ac;
+    text-align: center;
+}
+.aboutme img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.aboutme p a {
+    color: #00c8e7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.aboutme p a:hover {
+    color: #ffffff;
+    background-color: #0094ac;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+#menu-list li {
+    margin-bottom: 10px;
+}
+#menu-list li a {
+    display: block;
+    padding: 10px 15px;
+    color: #e0e0e0;
+    text-decoration: none;
+    background-color: #303030;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 10px #0d0d0d, -3px -3px 10px #353535;
+    border: 3px solid #0094ac;
+}
+#menu-list li a:hover {
+    background-color: #0094ac;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #0094ac;
+}
+.card {
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(145deg, #1e1e1e, #3d3d3d);
+    border: #0094ac 3px solid;
+    border-radius: 20px;
+    transition: all .3s;
+}
+.card a:not(.fa) {
+    color: #00c8e7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.card h1 {
+    font-size: 2em;
+    color: #00c8e7;
+    text-align: center;
+    margin: 5px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.card:hover {
+    box-shadow: 0px 0px 30px 1px #0094ac;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+#Header1 .column {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #0d0d0d, -3px -3px 10px #353535;
+    transition: transform 0.3s;
+    border: 3px solid #0094ac;
+}
+#Header1 .column h2 {
+    text-align: center;
+    color: #00c8e7;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px #000000;
+}
+#Header1 .column ul {
+    list-style-type: none;
+    padding: 0;
+}
+#Header1 .column ul li {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+#Header1 .column ul li::before {
+    content: '•';
+    color: #00c8e7;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+}
+#Header2 div p {
+    margin: 15px;
+    padding-bottom: 15px;
+}
+#Header2 a:hover {
+    color: #ffffff;
+    background-color: #0094ac;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#Header3 p {
+    font-size: 1.2em;
+    margin: 5px 15px 10px 15px;
+}
+#Header3 ul {
+    list-style-type: disc;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+#Header3 ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+#Header3 a:hover {
+    color: #ffffff;
+    background-color: #0094ac;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#Header4 .img-container {
+    display: flex;
+    justify-content: inline-grid;
+    margin-bottom: 10px;
+}
+#Header4 .img-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid #0094ac;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+#Header4 .img-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#Header4 .img-column h3 {
+    margin: 5px 10px 10px 10px;
+    padding: 0;
+}
+#Header4 a:hover {
+    color: #ffffff;
+    background-color: #0094ac;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#Header5 .content {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+#Header5 .content div p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    padding-bottom: 25px;
+}
+#Header5 .content ul {
+    list-style-type: none;
+}
+#Header5 .content ul li {
+    margin: 5px;
+    font-size: 1.1em;
+    color: #00c8e7;
+}
+#Header5 .content ul li a:hover {
+    color: #ffffff;
+    background-color: #0094ac;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.fa {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: 600;
+}
+.fa:hover {
+    transform: scale(1.25);
+    box-shadow: 0 0 30px #ffffff;
+}
+.fa-facebook {
+    background: linear-gradient(to right, #3B5998, #3B5998);
+    color: #ffffff;
+}
+.fa-twitter {
+    background: linear-gradient(to right, #55ACEE, #55ACEE);
+    color: #ffffff;
+}
+.fa-google {
+    background: linear-gradient(to right, #dd4b39, #dd4b39);
+    color: #ffffff;
+}
+.fa-tumblr {
+    background: linear-gradient(to right, #2c4762, #2c4762);
+    color: #ffffff;
+}
+.fa-reddit {
+    background: linear-gradient(to right, #ff5700, #ff5700);
+    color: #ffffff;
+}
+.fa-steam {
+    background: linear-gradient(to right, #09ace7, #1176f1);
+    color: #ffffff;
+}
+.fa-github {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: #000000;
+}
+footer {
+    text-align: center;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    border: 3px solid #0094ac;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #0d0d0d, -3px -3px 10px #353535;
+    transition: transform 0.3s;
+}
+@media (max-width: 1024px) {
+    main {
+        margin: auto;
+    }
+    .aboutme {
+        position: static;
+        width: auto;
+    }
+    .card {
+        width: 100%;
+    }
+    #Header1 .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #Header1 .column {
+        padding: 10px;
+        margin: 10px 0;
+        width: 75%;
+    }
+    #Header3 p {
+        font-size: 1em;
+        margin: 10px;
+    }
+    #Header4 .img-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 10px 10px 10px;
+    }
+    #Header4 .img-container img {
+        max-width: 65%;
+    }
+    footer {
+        position: static;
+        margin: 20px;
+    }
+}
+@media (max-width: 768px) {
+    main {
+        margin: auto;
+    }
+    .aboutme {
+        position: static;
+        width: auto;
+    }
+    .card {
+        width: 100%;
+    }
+    #Header1 .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #Header1 .column {
+        padding: 10px;
+        margin: 10px 0;
+        width: 75%;
+    }
+    #Header4 .img-container {
+        max-width: 100%;
+        margin: 10px;
+    }
+    #Header4 .img-container img {
+        max-width: 65%;
+    }
+    #Header3 p {
+        font-size: 1em;
+        margin: 10px;
+    }
+    #Header5 .content ul {
+        padding: 0;
+    }
+    #Header5 .content ul li {
+        margin-bottom: 10px;
+    }
+    #Header5 .content .email, #Header5 .content .submit {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    #menu-list li a {
+        padding: 10px 15px;
+    }
+    .socialmedia-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .socialmedia-container a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+        color: #e0e0e0;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .socialmedia-container a:hover {
+        background-color: #0094ac;
+        transform: scale(1.05);
+    }
+    .socialmedia-container a span {
+        margin-left: 10px;
+    }
+    .socialmedia-container a .fa {
+        margin: 0;
+    }
+    footer {
+        position: static;
+        margin: 20px;
+    }
+}
