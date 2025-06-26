@@ -14,22 +14,17 @@ body {
     background-color: #121212;
     color: #e0e0e0;
     margin: 0;
-    background-image: url('bg.jpg');
+    background-image: url('assets/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 main {
-    border-radius: 5px;
-    max-width: 82%;
     margin: auto auto auto 275px;
     padding: 25px;
 }
-main section {
-    margin-bottom: 15px;
-}
-p, a, li {
+* {
     font-family: Verdana, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -38,21 +33,29 @@ h1, h2, h3, h4, h5, h6 {
 .aboutme {
     position: fixed;
     left: 20px;
-    width: 200px;
+    width: 230px;
     background: linear-gradient(145deg, #1e1e1e, #3d3d3d);
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    padding: 25px;
+    padding: 10px 10px 0 10px;
     z-index: 1000;
     border: groove 5px #0094ac;
     text-align: center;
 }
 .aboutme img {
-    max-width: 100%;
+    justify-self: center;
+    max-width: 40%;
     height: auto;
     display: block;
     margin: 0;
     padding: 0;
+}
+.aboutme h3 {
+    margin: 0;
+}
+.aboutme p {
+    margin: 10px 0;
+    font-size: small
 }
 .aboutme p a {
     color: #00c8e7;
@@ -65,18 +68,22 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     transition: color 0.3s ease;
 }
+.aboutme div h4 {
+    margin: 10px 0 10px 0;
+}
 #menu-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: left;
+    font-size: small;
 }
 #menu-list li {
     margin-bottom: 10px;
 }
 #menu-list li a {
     display: block;
-    padding: 10px 15px;
+    padding: 5px 10px;
     color: #e0e0e0;
     text-decoration: none;
     background-color: #303030;
@@ -91,6 +98,12 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
     box-shadow: 0 0 15px #0094ac;
 }
+.card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .card {
     width: 100%;
     height: 80%;
@@ -98,6 +111,8 @@ h1, h2, h3, h4, h5, h6 {
     border: #0094ac 3px solid;
     border-radius: 20px;
     transition: all .3s;
+    font-size: small;
+    margin: 10px 0 10px 0;
 }
 .card a:not(.fa) {
     color: #00c8e7;
@@ -105,7 +120,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 0.3s ease;
 }
 .card h1 {
-    font-size: 2em;
     color: #00c8e7;
     text-align: center;
     margin: 5px;
@@ -139,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 #Header1 .column ul li {
-    font-size: 1.1em;
     color: #e0e0e0;
     margin-bottom: 10px;
     padding-left: 20px;
@@ -150,7 +163,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #00c8e7;
     position: absolute;
     left: 0;
-    font-size: 1.5em;
 }
 #Header2 div p {
     margin: 15px;
@@ -163,7 +175,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 0.3s ease;
 }
 #Header3 p {
-    font-size: 1.2em;
     margin: 5px 15px 10px 15px;
 }
 #Header3 ul {
@@ -172,7 +183,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 10px;
 }
 #Header3 ul li {
-    font-size: 1em;
     margin-bottom: 10px;
 }
 #Header3 a:hover {
@@ -220,7 +230,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
 }
 #Header5 .content div p {
-    font-size: 1.2em;
     color: #e0e0e0;
     padding-bottom: 25px;
 }
@@ -229,7 +238,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #Header5 .content ul li {
     margin: 5px;
-    font-size: 1.1em;
     color: #00c8e7;
 }
 #Header5 .content ul li a:hover {
@@ -245,7 +253,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     border: 1px solid #ffffff;
     border-radius: 50%;
-    font-size: 17px;
     font-weight: 600;
 }
 .fa:hover {
@@ -310,7 +317,6 @@ footer {
         width: 75%;
     }
     #Header3 p {
-        font-size: 1em;
         margin: 10px;
     }
     #Header4 .img-container {
@@ -355,7 +361,6 @@ footer {
         max-width: 65%;
     }
     #Header3 p {
-        font-size: 1em;
         margin: 10px;
     }
     #Header5 .content ul {
